@@ -6,11 +6,27 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+**Objetivo:** Crear una aplicación de incidencias en la vía que permita realizar sus respectivos reportes y listarlos.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+I18N generator(requerido para generar strings)
+```
+flutter gen-l10n
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Requerimientos generales
+
+La aplicación debe cumplir con lo siguiente:
+    - Visualizar listado de reportes.
+
+    - Crear reporte.
+
+    - Tomar foto desde la cámara.
+
+#### Criterios de aceptación
+    - Deberá consultar el listado guardado en localstorage.
+
+    - Deberá guardar la información en localstorage.
+
+    - Al momento de crear el reporte y adjuntar la imagen debe ser tomada desde la cámara.
+
+
