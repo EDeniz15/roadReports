@@ -16,6 +16,7 @@ flutter gen-l10n
 #### Requerimientos generales
 
 La aplicación debe cumplir con lo siguiente:
+
     - Visualizar listado de reportes.
 
     - Crear reporte.
