@@ -1,0 +1,13 @@
+{
+    "road_reports": "Reportes viales",
+    "seeMyReports": "Ver mis reportes",
+    "addReport": "Agregar reporte",
+    "myReports": "Mis reportes",
+    "youDontHaveReport": "Actualmente aún no cuentas con reportes",
+    "reportDescription": "Descripción del reporte",
+    "addImage": "Añadir imagen",
+    "enterTheDescription": "Ingresa la descripcion",
+    "save": "Guardar",
+    "reportDetail": "Detalle del reporte",
+    "descriptionNotEntered": "Descripción no ingresada"
+}
