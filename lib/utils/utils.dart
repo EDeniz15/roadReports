@@ -29,10 +29,12 @@ class Utils {
                 Icons.check,
                 color: Colors.white,
               ),
-              Text(
-                AppLocalizations.of(context).reportCreatedSuccess,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
+              Expanded(
+                child: Text(
+                  AppLocalizations.of(context).reportCreatedSuccess,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ],
