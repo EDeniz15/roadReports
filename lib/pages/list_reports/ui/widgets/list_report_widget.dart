@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:road_reports/pages/addReport/models/report.dart';
 import 'package:road_reports/pages/list_reports/ui/widgets/detail_report_widget.dart';
@@ -35,21 +36,40 @@ class ListReportsWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        left: 20.0,
-                      ),
+                    Flexible(
                       child: Row(
                         children: [
-                          const Icon(
-                            Icons.remove_red_eye_outlined,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(
+                          const Padding(
+                            padding: EdgeInsets.only(
                               left: 20.0,
                             ),
-                            child: Text(
-                              myReports[index].description ?? '',
+                            child: Icon(
+                              Icons.remove_red_eye_outlined,
+                            ),
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 20.0,
+                              ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    AppLocalizations.of(context).description,
+                                    style: TextStyle(
+                                      color: Colors.black.withOpacity(
+                                        0.5,
+                                      ),
+                                    ),
+                                  ),
+                                  Text(
+                                    myReports[index].description ?? '',
+                                    maxLines: 3,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ],

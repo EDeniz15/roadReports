@@ -9,5 +9,6 @@
     "enterTheDescription": "Ingresa la descripcion",
     "save": "Guardar",
     "reportDetail": "Detalle del reporte",
-    "descriptionNotEntered": "Descripción no ingresada"
+    "descriptionNotEntered": "Descripción no ingresada",
+    "description": "Descripción"
 }

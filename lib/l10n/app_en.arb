@@ -9,5 +9,6 @@
   "enterTheDescription": "Enter the description",
   "save": "Save",
   "reportDetail": "Report detail",
-  "descriptionNotEntered": "Description not entered"
+  "descriptionNotEntered": "Description not entered",
+  "description": "Description"
 }
