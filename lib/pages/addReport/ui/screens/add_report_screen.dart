@@ -6,6 +6,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:road_reports/pages/addReport/bloc/bloc.dart' as bloc;
 import 'package:road_reports/pages/addReport/ui/widgets/take_photo_widget.dart';
 import 'package:road_reports/pages/list_reports/bloc/bloc.dart' as bloc_report;
+import 'package:road_reports/utils/utils.dart';
 
 class AddReporScreen extends StatelessWidget {
   const AddReporScreen({
@@ -29,6 +30,9 @@ class AddReporScreen extends StatelessWidget {
           child: BlocListener<bloc.Bloc, bloc.State>(
             listener: (context, state) {
               if (state is bloc.ReportSavedState) {
+                Utils.showReportCreated(
+                  context,
+                );
                 context.read<bloc_report.Bloc>().add(
                       bloc_report.LoadInitialEvent(),
                     );

@@ -10,5 +10,6 @@
   "save": "Save",
   "reportDetail": "Report detail",
   "descriptionNotEntered": "Description not entered",
-  "description": "Description"
+  "description": "Description",
+  "reportCreatedSuccess": "Report created successfully"
 }

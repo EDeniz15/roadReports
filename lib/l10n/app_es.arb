@@ -10,5 +10,6 @@
     "save": "Guardar",
     "reportDetail": "Detalle del reporte",
     "descriptionNotEntered": "Descripción no ingresada",
-    "description": "Descripción"
+    "description": "Descripción",
+    "reportCreatedSuccess": "Reporte creado exitosamente"
 }
