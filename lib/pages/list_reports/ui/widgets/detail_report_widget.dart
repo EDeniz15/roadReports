@@ -29,48 +29,50 @@ class ShowReportWidget extends StatelessWidget {
             fontSize: 20,
           ),
         ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            images.isEmpty
-                ? SizedBox(
-                    child: Icon(
-                      Icons.image_not_supported,
-                      size: MediaQuery.of(context).size.width / 2,
-                    ),
-                  )
-                : Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Expanded(
-                        child: SizedBox(
-                          width: MediaQuery.of(context).size.width,
-                          height: 300,
-                          child: PageView.builder(
-                            controller: controller,
-                            pageSnapping: true,
-                            itemCount: images.length,
-                            itemBuilder: (context, index) {
-                              return Image.file(
-                                File(
-                                  images[index],
-                                ),
-                                fit: BoxFit.scaleDown,
-                              );
-                            },
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              images.isEmpty
+                  ? SizedBox(
+                      child: Icon(
+                        Icons.image_not_supported,
+                        size: MediaQuery.of(context).size.width / 2,
+                      ),
+                    )
+                  : Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Expanded(
+                          child: SizedBox(
+                            width: MediaQuery.of(context).size.width,
+                            height: 300,
+                            child: PageView.builder(
+                              controller: controller,
+                              pageSnapping: true,
+                              itemCount: images.length,
+                              itemBuilder: (context, index) {
+                                return Image.file(
+                                  File(
+                                    images[index],
+                                  ),
+                                  fit: BoxFit.scaleDown,
+                                );
+                              },
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-            Text(
-              description,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.blue,
+                      ],
+                    ),
+              Text(
+                description,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.blue,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
